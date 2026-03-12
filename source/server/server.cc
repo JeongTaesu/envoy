@@ -1058,7 +1058,7 @@ void InstanceBase::run() {
                 });
 
   // Run the main dispatch loop waiting to exit.
-  ENVOY_LOG(info, "starting main dispatch loop");
+  ENVOY_LOG(info, "starting main dispatch loop - custom");
   WatchDogSharedPtr watchdog;
   if (main_thread_guard_dog_) {
     watchdog = main_thread_guard_dog_->createWatchDog(api_->threadFactory().currentThreadId(),

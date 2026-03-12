@@ -1,0 +1,8 @@
+resources:
+- "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.Secret
+  name: server_cert
+  tls_certificate:
+    certificate_chain:
+      filename: /Users/taesuuu/Documents/Github/envoy/cert.pem
+    private_key:
+      filename: /Users/taesuuu/Documents/Github/envoy/key.pem
